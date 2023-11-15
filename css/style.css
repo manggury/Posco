@@ -235,7 +235,7 @@
 
 .mainSlider h2 {
     position: absolute;
-    top: 200px;
+    top: 145px;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0 15px;
@@ -249,7 +249,7 @@
 
 .mainSlider .slider_wrap .itm {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 100px);
 }
 
 
@@ -301,7 +301,7 @@
 .mainSlider .top_dots {
     position: absolute;
     display: flex;
-    top: 270px;
+    top: 215px;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -373,35 +373,27 @@
 
 /* -ㅡㅡㅡㅡㅡㅡㅡㅡㅡ세번째 섹션ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 .mainContent01 .content01_wrap {
-    padding: 145px 15px 0 15px;
-    width: 1200px;
+    padding: 100px 15px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .mainContent01 .content01_wrap .img_box_wrap {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .mainContent01 .content01_wrap .img_box {
     position: relative;
-
-}
-
-.mainContent01 .content01_wrap .title_box h2 {
-    font-size: 48px;
-    font-weight: 500;
-    margin: 0 0 85px 0;
 }
 
 .mainContent01 .content01_wrap .text_box {
     position: absolute;
-    display: block;
-    max-width: 1200px;
-    width: 90%;
-    top: 74%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-align: center;
 }
 
 .mainContent01 .content01_wrap .text_box h3 {
@@ -414,7 +406,6 @@
 
 .mainContent01 .content01_wrap .text_box p {
     font-size: 17px;
-
     color: #fff;
     line-height: 1.4;
 }
@@ -422,6 +413,7 @@
 
 
 /* -ㅡㅡㅡㅡㅡㅡㅡㅡㅡ네번째 섹션ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
 .mainContent02 .content02_wrap {
     padding: 145px 15px 0 15px;
     width: 1200px;
@@ -434,32 +426,18 @@
     margin: 0 0 85px 0;
 }
 
-.mainContent02 .content02_wrap .img_box_wrap {
-    display: flex;
-}
-
 .mainContent02 .content02_wrap .img_box {
     position: relative;
-    background-color: #00A5E5;
 }
 
-.mainContent02 .content02_wrap .img01 img {
-    opacity: 1;
+.mainContent02 .content02_wrap .img_box img {
+    cursor: pointer;
 }
 
+.mainContent02 .content02_wrap .img_box img:hover {}
 
-.mainContent02 .content02_wrap .img01 img:hover {
-    /* transition: 0.5s;
-    background: rgba(0, 0, 255, 0.4);
-    background-color: #00A5E5;
-    opacity: 0.5;
-    z-index: 997; */
-    /* display: block;
-    background: rgba(0, 0, 255, 0.2);
-    z-index: 997;
-    transition: 0.5s */
-    opacity: 0.5s;
-    transition: 0.5s;
+.mainContent02 .content02_wrap .img_box_wrap {
+    display: flex;
 }
 
 .mainContent02 .content02_wrap .text_box {
@@ -484,8 +462,137 @@
     font-size: 24px;
     line-height: 1.4;
     text-align: center;
+
     color: #fff;
 }
+
+/* -ㅡㅡㅡㅡㅡㅡㅡㅡㅡ다섯번째 섹션ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.mainTap {
+    position: relative;
+}
+
+.mainTap .title {
+    padding: 0 15px;
+}
+
+.mainTap h2 {
+    position: absolute;
+    top: 145px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    color: #fff;
+    z-index: 1;
+}
+
+.mainTap .maintap_slide .itm {
+    position: relative;
+    height: calc(100vh - 70px);
+}
+
+.mainTap .maintap_slide .itm01 {
+    background: url(../image/mainTap01.jpg)no-repeat center center/cover;
+}
+
+.mainTap .maintap_slide .itm02 {
+    background: url(../image/mainTap02.jpg)no-repeat center center/cover;
+}
+
+.mainTap .maintap_slide .itm03 {
+    background: url(../image/mainTap03.jpg)no-repeat center center/cover;
+}
+
+.mainTap .maintap_slide .itm .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    text-align: center;
+    z-index: 999;
+}
+
+.mainTap .maintap_slide .itm .slogan p {
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 70px;
+    padding: 0 0 30px 0;
+}
+
+.mainTap .maintap_slide .itm .slogan strong {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+.mainTap .bot_dots {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+}
+
+.mainTap .bot_dots ul {
+    display: flex;
+    gap: 300px;
+    text-align: center;
+}
+
+.mainTap .bot_dots ul li a {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.mainTap .bot_dots ul li a::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border: 5px solid #fff;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+.mainTap .bot_dots ul li.on a::before {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(78, 168, 224);
+    z-index: 999;
+}
+
+.mainTap .bot_dots ul li a::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+
+.mainTap .bot_dots ul li.on a::after {
+    width: 110px;
+    height: 110px;
+    border: 50px solid rgba(0, 0, 0, 0.7);
+}
+
 
 /* -ㅡㅡㅡㅡㅡㅡㅡㅡ푸터ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
@@ -493,4 +600,23 @@
     height: 100vh;
     background: tomato;
     border: 4px solid #333;
+}
+
+
+.totop {
+    background: transparent;
+    border: none;
+    position: fixed;
+    bottom: 100px;
+    right: 200px;
+    /* transition: 0.5s; */
+}
+
+.totop i {
+    padding: 16px;
+    background: #00A5E5;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
 }
