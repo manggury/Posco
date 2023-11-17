@@ -105,21 +105,15 @@
 }
 
 .header .header_event::after {
+    content: "";
     position: absolute;
-    top: 101px;
-    right: -10px;
-    content: " ";
+    bottom: 0;
+    right: -20px;
     height: 0;
-    z-index: -1;
-    border-bottom: 20px solid;
-    border-left: +10px solid rgba(0, 0, 0, 0);
-    border-right: -20px solid rgba(0, 0, 0, 0);
-    color: #bbb;
-    transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
+    border-top: 10px solid #bbb;
+    border-left: 10px solid #bbb;
+    border-bottom: 9px solid transparent;
+    border-right: 10px solid transparent;
 }
 
 .header .header_event a {
