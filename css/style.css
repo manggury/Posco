@@ -286,9 +286,13 @@
     }
 
     100% {
-        transform: translate(-50%, 50px) scale(1.2);
+        transform: translate(-50%, 100px) scale(1.2);
 
     }
+}
+
+.mainVisual .arrows {
+    display: none;
 }
 
 .mainVisual .visual_slide .slick-arrow {
