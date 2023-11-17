@@ -948,7 +948,6 @@
 
 .mainNews .img_box iframe {
     margin: 0 0 20px 0;
-
 }
 
 
@@ -973,6 +972,7 @@
     font-size: 22px;
     color: #000;
     line-height: 1.4;
+    transition: 0.3s;
 }
 
 .mainNews .img_box_wrap .text_box p:hover {
@@ -1088,8 +1088,9 @@
     padding: 145px 0 0 0;
 }
 
-.footer hr {
-    border: 1px solid #ddd;
+.footer_line {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .footer .footer_top {
